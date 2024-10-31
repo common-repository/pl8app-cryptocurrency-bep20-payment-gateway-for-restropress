@@ -1,0 +1,100 @@
+span.all-copy {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+
+span.no-copy {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.qr-code-container {
+  background-color: #ffffff;
+  padding: 8px;
+}
+.clipboard:before {
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip {
+  font-size: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Pay-metamask-button {
+  width: 186px;
+  height: 52px;
+  background-size: 100%;
+  background-image: url("../img/1_pay_mm_off.png");
+  cursor: pointer;
+}
+
+.Pay-metamask-button:hover {
+  background-image: url("../img/1_pay_mm_over.png");
+}
+
+.Pay-metamask-button:active {
+  background-image: url("../img/1_pay_mm_off.png");
+}
+
+.Pay-binance-button {
+  background-color: #0b0e11;
+  box-shadow: 2px 1px 2px #888;
+  width: 178px;
+  height: 48px;
+  margin: 2px 4px 5px 4px;
+  cursor: pointer;
+}
+
+.Pay-binance-button:hover {
+  box-shadow: 4px 4px 4px #888;
+  margin: 1px 6px 6px 2px;
+}
+
+.Pay-binance-button.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.Pay-binance-button.disabled:hover {
+  box-shadow: 2px 1px 2px #888;
+  margin: 2px 4px 5px 4px;
+}
+
+/* Filter colors can be generated using this code pen https://codepen.io/sosuke/pen/Pjoqqp */
+.Pay-binance-button img {
+  filter: invert(84%) sepia(48%) saturate(3018%) hue-rotate(356deg)
+    brightness(97%) contrast(94%);
+  height: 100%;
+  float: left;
+  padding: 6px;
+}
+
+.Pay-binance-button p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 48px;
+  margin: auto auto auto 52px;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+#dialog .account-list {
+  list-style-type: none;
+}
+
+#dialog .account-list input[type="radio"] + label {
+  cursor: pointer;
+}
